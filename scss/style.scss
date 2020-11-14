@@ -13,6 +13,36 @@ $colorul:#f0f8ff;
     background-color:$colorheader;
 }
 
+.video-top {
+    background: url(../imagen/toros.jpg);
+    background-size: cover;
+    padding: 79px 0;
+}
+
+.video-top-img {
+    margin-right: 105px;
+    border-right: solid 2px #fff;
+    padding-right: 27px;
+}
+
+.section-title {
+    font-size: 24px;
+    padding-bottom: 12px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 18px;
+    border-bottom: solid 3px #aa954a;
+}
+
+.video-top-text{
+color: $blanco;
+}
+
+.relative-content{
+position: relative;
+}
+
+
 .headertop__amenu{
    color: $colorul;
 }
@@ -27,6 +57,22 @@ a:link, a:visited, a:active {
 background-color: $color-fondos;
 color: $blanco;
 text-decoration: none;
+}
+
+@mixin boxmix {
+    background: linear-gradient(180deg, $celeste 0%, $azul 100%);
+    font-family: 'Nanum Gothic', sans-serif;
+    border-radius: 25px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin boximg {
+    @include boxmix;
+    width: 100%;
+    height: auto;
+    transform: scale3d(1.1, 1.1, 1);
+    transition: all 0.25s linear;
 }
 
 .box{
@@ -182,7 +228,7 @@ padding-left: 50px;
   
   .row-striped:nth-of-type(even){
     background-color: $fondocalendario2;
-    border-left: 4px #efefef solid;
+    border-left: 4px #5e4b0f solid;
     color: $blanco;
   }
   

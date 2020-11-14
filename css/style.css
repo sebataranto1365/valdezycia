@@ -1,6 +1,30 @@
 .headertop {
   background-color: #C8B084; }
 
+.video-top {
+  background: url(../imagen/toros.jpg);
+  background-size: cover;
+  padding: 79px 0; }
+
+.video-top-img {
+  margin-right: 105px;
+  border-right: solid 2px #fff;
+  padding-right: 27px; }
+
+.section-title {
+  font-size: 24px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 18px;
+  border-bottom: solid 3px #aa954a; }
+
+.video-top-text {
+  color: #fff; }
+
+.relative-content {
+  position: relative; }
+
 .headertop__amenu {
   color: #f0f8ff; }
 
@@ -149,7 +173,7 @@ a:link, a:visited, a:active {
 
 .row-striped:nth-of-type(even) {
   background-color: #927d37;
-  border-left: 4px #efefef solid;
+  border-left: 4px #5e4b0f solid;
   color: #fff; }
 
 .row-striped {
