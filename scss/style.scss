@@ -1,0 +1,199 @@
+$color-fondos: #897731;
+$colorfecha: #938349;
+$fondocalendario: #C8BE9D;
+$colorheader: #C8B084;
+$fondocalendario2:  #927d37;
+$blanco: #fff;
+$celeste: #559ed1;
+$azul: #004c84;
+$azul2: #006eae;
+$colorul:#f0f8ff;
+
+.headertop {
+    background-color:$colorheader;
+}
+
+.headertop__amenu{
+   color: $colorul;
+}
+
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+.footerclass{
+background-color: $color-fondos;
+color: $blanco;
+text-decoration: none;
+}
+
+.box{
+    background: linear-gradient(180deg, $celeste 0%, $azul 100%);
+    font-family: 'Nanum Gothic', sans-serif;
+    border-radius: 25px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.box:before,
+.box:after,
+.box .box-content:before,
+.box .box-content:after{
+    content: "";
+    background: $blanco;
+    width: 50%;
+    height: 4px;
+    transform: scaleX(0);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    transition: all 600ms ease;
+}
+
+.box:after{
+    top: auto;
+    bottom: 15px;
+    left: auto;
+    right: 15px;
+}
+
+.box .box-content:before,
+.box .box-content:after{
+    width: 4px;
+    height: 50%;
+    transform: scaleY(0);
+}
+
+.box .box-content:after{
+    left: auto;
+    right: 15px;
+    top: auto;
+    bottom: 15px;
+}
+
+.box:hover:before,
+.box:hover:after,
+.box:hover .box-content:before,
+.box:hover .box-content:after{
+    transform: scale(1);
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    transform: scale3d(1.1, 1.1, 1);
+    transition: all 0.25s linear;
+}
+
+.box:hover img{
+    opacity: 0.25;
+    transform: scale(1.25);
+}
+
+.box .inner-content{
+    color: $blanco;
+    text-align: center;
+    width: 70%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transition: all 600ms ease;
+}
+
+.box:hover .inner-content{
+    opacity: 1;
+    top: 50%;
+}
+
+
+
+.mainsn{
+    background-color: #ECECED;
+    color: #19108f ;
+}
+
+.limision{
+list-style: none;
+background: url(http://valdez.com.uy/wp-content/uploads/2016/07/icolista.png) left center no-repeat;
+background-size: 44px;
+line-height: 42px;
+margin-bottom: 10px;
+font-size: 15px;
+font-family: 'Raleway';
+letter-spacing: 1px;
+color: #808080;
+padding-left: 50px;
+
+}
+
+.box .title{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 3px;
+}
+.box .post{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 12px;
+    display: block;
+}
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.box .icon li{
+    display: inline-block;
+    margin: 0 4px;
+}
+.box .icon li a{
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    height: 35px;
+    width: 35px;
+    border: 2px solid $blanco;
+    border-radius: 10px 0 10px 0;
+    display: block;
+    transition: all 0.3s;
+}
+.box .icon li a:hover{
+    color: #b31217;
+    background: #fff;
+    border-radius: 0 10px 0 10px;
+}
+@media only screen and (max-width:990px){
+    .box { margin: 0 0 30px; }
+}
+
+.row-striped:nth-of-type(odd){
+    background-color: $fondocalendario;
+    border-left: 4px #000000 solid;
+    color: $blanco;
+  }
+  
+  .row-striped:nth-of-type(even){
+    background-color: $fondocalendario2;
+    border-left: 4px #efefef solid;
+    color: $blanco;
+  }
+  
+  .row-striped {
+      padding: 15px 0;
+  }
+
+  .colorfecha {
+    background-color: $azul2;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
