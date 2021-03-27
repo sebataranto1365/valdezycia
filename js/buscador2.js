@@ -17,6 +17,7 @@ function save_data(event) {
 }
 
 
+
 const newcampo1 = {
   departamento: "artigas",
   localidad: "diego lamas",
@@ -45,14 +46,6 @@ const newcampo4 = {
   coneat: "150 ",
 };
 
-function onclick (event) {
-  event.preventDefault()
-  let btn = document.getElementById("button");
-  btn.setAttribute('disabled','disabled');
-  };
-
-  
-
 
 function buscaCampo(buscacampo) {
   let resultado = document.getElementById("resultado")
@@ -62,7 +55,7 @@ function buscaCampo(buscacampo) {
     switch (buscacampo.departamento.toLocaleLowerCase()) {
       case "artigas":
         const el1 = document.createElement("p");
-        var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo1.departamento}, indice coneat: ${newcampo1.coneat}, hectareas: ${newcampo1.hectareas}, localidad: ${newcampo1.localidad}`);
+        var text = document.createTextNode(innerHTML = `Mejor resultado: Departamento: ${newcampo1.departamento} - Indice coneat: ${newcampo1.coneat} - Hectareas: ${newcampo1.hectareas} - Localidad: ${newcampo1.localidad}`);
         el1.appendChild(text);
         console.log(el1);
         console.log(document);
@@ -71,7 +64,7 @@ function buscaCampo(buscacampo) {
         break;
       case "salto":
         const el2 = document.createElement("p");
-        var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo2.departamento}, indice coneat: ${newcampo2.coneat}, hectareas: ${newcampo2.hectareas}, localidad: ${newcampo2.localidad}`);
+        var text = document.createTextNode(innerHTML = `Mejor resultado: Departamento: ${newcampo2.departamento} - Indice coneat: ${newcampo2.coneat} - Hectareas: ${newcampo2.hectareas} - Localidad: ${newcampo2.localidad}`);
         el2.appendChild(text);
         console.log(el2);
         console.log(document);
@@ -80,7 +73,7 @@ function buscaCampo(buscacampo) {
         break;
       case "florida":
         const el3 = document.createElement("p");
-        var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo3.departamento}, indice coneat: ${newcampo3.coneat}, hectareas: ${newcampo3.hectareas}, localidad: ${newcampo3.localidad}`);
+        var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo3.departamento} - Indice coneat: ${newcampo3.coneat} - Hectareas: ${newcampo3.hectareas} - Localidad: ${newcampo3.localidad}`);
         el3.appendChild(text);
         console.log(el3);
         console.log(document);
@@ -89,7 +82,7 @@ function buscaCampo(buscacampo) {
         break;
       case "tacuarembo":
         const el4 = document.createElement("p");
-        var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo4.departamento}, indice coneat: ${newcampo4.coneat}, hectareas: ${newcampo4.hectareas}, localidad: ${newcampo4.localidad}`);
+        var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo4.departamento} - Indice coneat: ${newcampo4.coneat} - Hectareas: ${newcampo4.hectareas} - Localidad: ${newcampo4.localidad}`);
         el4.appendChild(text);
         console.log(el4);
         console.log(document);
@@ -98,7 +91,7 @@ function buscaCampo(buscacampo) {
         break;
       default:
         const el5 = document.createElement("p");
-        var text = document.createTextNode(`no se ha encontrado resultado`);
+        var text = document.createTextNode(`No se ha encontrado resultado`);
         el5.appendChild(text);
         console.log(el5);
         console.log(document);
