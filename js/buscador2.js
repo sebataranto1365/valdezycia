@@ -64,7 +64,6 @@ function buscaCampo(buscacampo) {
         const el1 = document.createElement("p");
         var text = document.createTextNode(innerHTML = `Mejor resultado: departamento: ${newcampo1.departamento}, indice coneat: ${newcampo1.coneat}, hectareas: ${newcampo1.hectareas}, localidad: ${newcampo1.localidad}`);
         el1.appendChild(text);
-        debugger
         console.log(el1);
         console.log(document);
         console.log(element);
